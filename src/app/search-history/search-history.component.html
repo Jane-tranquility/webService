@@ -1,0 +1,18 @@
+
+<h2>Welcome to the serach history list!</h2>
+
+<table class="view">
+	<thead>
+		<tr>
+			<th>searched entry</th>
+			<th>timestamp</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let record of searchRecords">
+			<td>{{record.text}}</td>
+			<td>{{record.timestamp}}</td>
+		</tr>
+	</tbody>
+</table>
+

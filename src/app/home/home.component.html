@@ -1,0 +1,16 @@
+
+<input [(ngModel)]="searchText" class="input" placeholder="Please type in your search">
+<button (click)="searchItem()">Search!</button>
+
+<h5>Response from Wikipedia:</h5>
+<div class=textFromWiki>
+	<ul *ngFor="let entry of dataWiki">
+		<li>{{entry}}</li>
+	</ul>
+</div>
+
+<h5>Response from Gophy:</h5>
+<div class=Giphy *ngFor="let entry of dataGiphy">
+	<img src={{entry}}>
+</div>
+
